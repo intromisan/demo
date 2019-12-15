@@ -103,6 +103,14 @@ header .overlay {
   color: hsl(231, 7%, 65%);
 }
 
+.overlay .login a:hover {
+  border-bottom: 1px solid hsl(231, 7%, 65%);
+}
+
+.overlay ul a:hover {
+  border-bottom: 1px solid hsl(230, 29%, 20%);
+}
+
 .menu {
   padding: 1.5rem 2rem;
   position: fixed;
@@ -198,6 +206,7 @@ main {
   font-size: 2rem;
   font-size: 'Barlow', sans-serif;
   width: 80%;
+  color: hsl(231, 7%, 65%);
 }
 
 .demo-preview {
@@ -207,7 +216,7 @@ main {
 }
 
 .demo-preview .demo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 1rem 2rem;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 1px;
@@ -216,6 +225,10 @@ main {
   border: 1px solid hsl(0, 100%, 68%);
   color: #eef3f6;
   cursor: pointer;
+}
+
+.demo-preview .demo:hover {
+  opacity: 70%;
 }
 
 .demo-preview h3 {
@@ -228,7 +241,142 @@ main {
   html{
     font-size: 20px;
   }
-} 
+}
 
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+
+  header {
+    all: initial;
+    display: flex;
+    height: 20vh;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  header .logo img{
+    all: initial;
+  }
+
+  header nav {
+    width: 37%;
+  }
+
+  nav .overlay {
+    all: initial;
+  }
+
+  .overlay ul {
+    all: initial;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .overlay .line {
+    width: .6rem;
+    height: .6rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    background-color: hsl(231, 7%, 65%);
+    border-radius: 100px;
+  }
+
+  ul li a {
+    font-size: 1.3rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+  }
+
+  main .info {
+    padding-right: 0;
+  }
+
+  main .info h3 {
+    font-size: 1.3rem;
+  }
+
+  .info h3 span {
+    font-size: 1.3rem;
+    padding: .4rem 1rem;
+  }
+
+  .info h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    width: 90%;
+  }
+
+  .info p {
+    width: 45%;
+    font-size: 1.6rem;
+  }
+
+  .info .demo-preview {
+    margin-top: 5rem;
+  }
+
+  .info .demo-preview h3 {
+    font-size: 1.2rem;
+  }
+
+  .info .demo-preview .demo {
+    font-size: 1.2rem;
+  }
+
+  main .mockup {
+    margin: 0;
+    max-width: 80%;
+  }
+
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 12;
+  }
+
+  main .info h1 {
+    width: 75%;
+  }
+
+  main .info p {
+    width: 35%;
+  }
+
+  /* main .mockup {
+    width: 55%;
+  } */
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 13px;
+  }
+
+  main .info h1 {
+    width: 80%;
+  }
+
+  main .info p {
+    width: 35%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
