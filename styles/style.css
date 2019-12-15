@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(230, 29%, 20%);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body .shape {
+  background: #eef3f6;
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  z-index: -1000;
+  right: 0;
+  border-bottom-left-radius: 5rem;
+}
+
+header {
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 2.5rem;
+  margin: .6rem;
+}
+
+header .overlay {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  right: 10%;
+  height: 50vw;
+  margin: 2.5rem auto;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: all 650ms;
+  transform: scale(0);
+  opacity: 1;
+}
+
+.overlay ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.overlay.open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.overlay li {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.overlay .line {
+  width: 100%;
+}
+
+.overlay .line div {
+  content: "";
+  height: 1px;
+  background-color: hsl(231, 7%, 65%);
+}
+
+.overlay .login a {
+  color: hsl(231, 7%, 65%);
+}
+
+.menu {
+  padding: 1.5rem 2rem;
+  position: fixed;
+  top: 3rem;
+  right: 2.5rem;
+  background-color: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.menu .bar,
+.menu .bar::before,
+.menu .bar::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 2rem;
+  background-color: hsl(230, 29%, 20%);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 400ms;
+}
+
+.menu .bar::after {
+  top: 1rem;
+}
+
+.menu .bar::before {
+  top: -1rem;
+}
+
+.active .bar {
+  background-color: transparent;
+}
+
+.active .bar::before {
+  transform: rotate(45deg);
+}
+
+.active .bar::after {
+  transform: rotate(-45deg);
+}
+
+.active .bar::before,
+.active .bar::after {
+  top: 0;
+}
+
+main {
+  width: 100%;
+}
+
+.mockup {
+  margin: 3.5rem auto 6rem;
+}
+
+.mockup img {
+  width: 100%;
+}
+
+.info {
+  padding: 0 10%;
+}
+
+.info h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 3px;
+}
+
+.info h3 span {
+  margin-right: .5rem;
+  letter-spacing: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: .5rem 1.2rem;
+  background-color: hsl(230, 29%, 20%);
+  color: #eef3f6;
+  border-radius: 5rem;
+}
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
