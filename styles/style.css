@@ -29,7 +29,7 @@ body {
 body .shape {
   background: #eef3f6;
   width: 50%;
-  height: 50vh;
+  height: 50%;
   position: absolute;
   z-index: -1000;
   right: 0;
@@ -37,9 +37,11 @@ body .shape {
 }
 
 header {
-  height: 10vh;
+  /* height: 10vh; */
+
   width: 90%;
   margin: auto;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,8 +106,8 @@ header .overlay {
 .menu {
   padding: 1.5rem 2rem;
   position: fixed;
-  top: 3rem;
-  right: 2.5rem;
+  top: 2.5em;
+  right: 2.5em;
   background-color: transparent;
   z-index: 999;
   cursor: pointer;
@@ -186,10 +188,47 @@ main {
   border-radius: 5rem;
 }
 
+.info h1 {
+  font-size: 3.7rem;
+  line-height: 3.5rem;
+  margin: 2rem 0;
+}
 
+.info p {
+  font-size: 2rem;
+  font-size: 'Barlow', sans-serif;
+  width: 80%;
+}
 
+.demo-preview {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
 
+.demo-preview .demo {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: hsl(0, 100%, 68%);
+  border: 1px solid hsl(0, 100%, 68%);
+  color: #eef3f6;
+  cursor: pointer;
+}
 
+.demo-preview h3 {
+  margin-left: 3rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  html{
+    font-size: 20px;
+  }
+} 
 
 
 /*# sourceMappingURL=style.css.map */
